@@ -18,7 +18,7 @@ git submodule update --init --recursive
 # this will generate 2 JAR files:
 # * 'original-pantools-X.Y.Z.jar'
 # * 'pantools-X.Y.Z.jar' <- JAR to package
-mvn package -DskipTests=true
+mvn package
 
 # rename 'pantools-X.Y.Z.jar' to 'pantools.jar'
 cp target/pantools-*.jar "${PACKAGE_HOME}/pantools.jar"
