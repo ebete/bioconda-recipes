@@ -19,15 +19,30 @@ requirements:
     - openjdk =8
     - maven
     - git
+    # needed for submodule compilation
     - {{ compiler('cxx') }}
   run:
-    - python
-    - openjdk =8
+    # based on /conda.yml file in repo, with build-only dependencies removed (i.e., 'maven')
+    - openjdk=8
+    - python>=3.7
+    - kmc=3
     - mcl
-    - kmc
+    - mafft
+    - iqtree
+    - fasttree
+    - blast
+    - mash=2.3
+    - fastani
+    - busco=5.2.2
+    - r-base=3.4.3
+    - r-ggplot2=2.2.1
+    - r-ape=5.0
+    - graphviz
+
 
 test:
   commands:
+    # should exit with return code 0
     - pantools version
 
 about:
