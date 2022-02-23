@@ -70,6 +70,7 @@ extra:
     - doi:https://doi.org/10.1093/bioinformatics/btw455
     - doi:https://doi.org/10.1186/s12859-018-2362-4
     - doi:https://doi.org/10.1101/813634
+    - biotools:PanTools
   skip-lints:
     # necessary for git_url
     - uses_vcs_url
